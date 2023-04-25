@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Assigment</title>
+    <style>
+        
+        .box{
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            text-align: center;
+            border-radius: 20px;
+        }
+       .box1{
+            background-color: rgb(0, 255, 179);
+            height: 500px;
+            width: 500px;
+       }
+       .box2{
+            background-color: rgb(22, 133, 12);
+            height: 400px;
+            width: 400px;
+       }
+       .box3{
+            background-color: rgb(209, 206, 4);
+            height: 300px;
+            width: 300px;
+       }
+       .box4{
+            background-color: rgb(7, 244, 252);
+            height: 250px;
+            width: 250px;
+        
+        }
+        .box5{
+        background-color: rgb(247, 7, 79);
+        height: 200px;
+            width: 200px;
+        }
+        /*----- Screen-----*/
+@media screen and (min-width:1200px) {
+    .box{
+        display: none;
+    }
+    .box1{
+        display: block;
+    }
+   
+}
+/*-----------Larger Screen-----------*/
+@media screen and (max-width:1440px) {
+    .box{
+        display: none;
+    }
+   .box2{
+        display: block;
+   }
+}
+/*-------Normal Screen--------*/
+@media screen and (max-width:1024px) {
+    .box{
+        display: none;
+    }
+    .box3{
+        display:block;
+    }
+}
+  
+
+/*-----Tablet Screen---*/
+@media screen and (max-width:768px) {
+    .box{
+       display: none;
+    }
+    .box4{
+        display: block;
+    }
+    }
+    
+
+
+@media only screen and (max-width:425px) {
+    
+    .box{
+       display: none;
+    }
+    .box5{    
+        display:block;
+    }
+    }
+    
+    </style>
+</head>
+<body>
+        <div class="box box1">This is Media Query demo page </div>
+        <div class="box box2">This is Media Query demo page </div>
+        <div class="box box3"> This is Media Query demo page</div>
+        <div class="box box4">This is Media Query demo page </div>
+        <div class="box box5">This is Media Query demo page </div>
+   
+</body>
+</html>
